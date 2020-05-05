@@ -25,7 +25,7 @@ Install R package [shiny](https://shiny.rstudio.com/)
   <img src="./img/example.png" alt="Size Limit CLI" width="738">
 </p>
 
-### Authors
+### Author
 * **Jeremy Rohmer** - [rohmerj](https://orcid.org/0000-0001-9083-5965)
 
 ## References
@@ -40,6 +40,6 @@ Methods for the evaluation and synthesis of multiple sources of information appl
 Nuclear Engineering and Design, 238(9), 2484-2493.
 
 ### Acknowledgments
-This study has been carried out within the NARSIS project, which has received funding from the European Union’s H2020-
+* This study has been carried out within the NARSIS project, which has received funding from the European Union’s H2020-
 Euratom Programme under grant agreement N° 755439. 
-We thank [Eric Chojnacki](https://www.researchgate.net/profile/Eric_Chojnacki) for valuable discussions regarding the theorical backgrounds of the implemented methods.
+* We thank [Eric Chojnacki](https://www.researchgate.net/profile/Eric_Chojnacki) for valuable discussions regarding the theorical backgrounds of the implemented methods.
