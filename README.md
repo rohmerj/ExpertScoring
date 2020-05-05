@@ -1,5 +1,5 @@
 ### ExpertScoring
-Interactive web app to perfom scoring of experts using the classical [[1]](#1), and the possibilistic] [[2]](#2) approach. 
+Interactive web app to perfom scoring of experts using the classical [[1]](#1), and the possibilistic [[2]](#2) approach. 
 
 ### Prerequisites
 Install R package [shiny](https://shiny.rstudio.com/)
