@@ -14,7 +14,13 @@ Install R package [shiny](https://shiny.rstudio.com/)
   * *q3* column: the upper percentile (e.g. the 95th percentile)
   * [Example](https://github.com/rohmerj/ExpertScoring/blob/master/data/expert.csv)
 * Upload dataset of answers to calibration questions in csv format (*seed.csv*)
+  * *var* column: the index of the seed variable
+  * *val* column: the value of the seed variable
+  * *l* column: the lower bound
+  * *u* column: the upper bound
+  * [Example](https://github.com/rohmerj/ExpertScoring/blob/master/data/seed.csv)
 
+### Example
 <p align="center">
   <img src="./img/example.png" alt="Size Limit CLI" width="738">
 </p>
