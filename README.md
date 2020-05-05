@@ -6,14 +6,14 @@ Install R package [shiny](https://shiny.rstudio.com/)
 
 ### Getting Started
 * Run the R script *runApp.R*
-* Upload dataset of experts' answers to calibration questions in csv format (*expert.csv*) with
+* Upload dataset of experts' answers to calibration questions in csv format (e.g. *expert.csv*)
   * *id* column: the index of the expert
   * *var* column: the index of the seed variable
   * *q1* column: the lower percentile (e.g. 5th percentile)
   * *q2* column: the percentile used as best estimate (e.g. the median)
   * *q3* column: the upper percentile (e.g. the 95th percentile)
   * [Example](https://github.com/rohmerj/ExpertScoring/blob/master/data/expert.csv)
-* Upload dataset of answers to calibration questions in csv format (*seed.csv*)
+* Upload dataset of answers to calibration questions in csv format (e.g. *seed.csv*)
   * *var* column: the index of the seed variable
   * *val* column: the value of the seed variable
   * *l* column: the lower bound
