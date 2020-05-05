@@ -5,9 +5,18 @@ Interactive web app to perfom scoring of experts using the classical [[1]](#1), 
 Install R package [shiny](https://shiny.rstudio.com/)
 
 ### Getting Started
-* Run the R script *RunApp.R*
-* Upload dataset of experts' answers to calibration questions (*expert.csv*)
-* Upload dataset of answers to calibration questions (*seed.csv*)
+* Run the R script *runApp.R*
+* Upload dataset of experts' answers to calibration questions in csv format (*expert.csv*) with
+  * *id* column: the index of the expert
+  * *var* column: the index of the seed variable
+  * *q1* column: the lower percentile (e.g. 5th percentile)
+  * *q2* column: the percentile used as best estimate (e.g. the median)
+  * *q3* column: the upper percentile (e.g. the 95th percentile)
+* Upload dataset of answers to calibration questions in csv format (*seed.csv*)
+
+<p align="center">
+  <img src="./img/example.png" alt="Size Limit CLI" width="738">
+</p>
 
 ### Authors
 * **Jeremy Rohmer** - [rohmerj](https://orcid.org/0000-0001-9083-5965)
