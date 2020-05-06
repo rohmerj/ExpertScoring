@@ -1,36 +1,12 @@
-plotFUN_seed<-function(data_expert,data_seed,choix){
+########################################################
+#### 06/05/20
+#### author: Jeremy Rohmer, BRGM
+#### plot function of calibration and informativeness scores
+#### using the possibilistic approach by Destercke & Chojnacki (2008)
+#### using the classical model by Cooke (1991)
+########################################################
 
-	qui<-which(data_expert[,"var"]==choix)
-	E<-data_expert[qui,]
-	S<-data_seed$val[choix]
-	ne<-length(unique(E$id))
-
-	plot(0,0,
-		axes=F,
-		xlab="",ylab="",
-		xlim=c(min(E$q5)*0.90,max(E$q95)*1.1),
-		ylim=c(1-0.5,ne+0.5),
-		main=paste("seed",choix,sep="")
-	)
-	for (ii in 1:ne){
-		lines(c(E$q5[ii],E$q95[ii]),c(ii,ii))
-		points((unlist(E$q50[ii])),ii,pch=15,cex=1.25)
-	}
-	abline(v=S,lwd=2,col=2,lty=2)
-	axis(2, at = 1:ne, labels = paste("Ex",1:ne,sep=""),cex.axis=1.25,lwd=1.25)
-	axis(1)
-
-}
-
-plotFUN_possi<-function(param,seed,u,l,add=FALSE){
-	if (add==FALSE){
-	plot(c(param[1],param[2]),c(0,1),ty="l",xlim=c(u,l),ylim=c(0,1),lwd=4,xlab="",ylab=expression(pi),cex.lab=1.5,cex.axis=1.5)
-	lines(c(param[2],param[3]),c(1,0),ty="l",xlim=c(u,l),ylim=c(0,1),lwd=4)
-	abline(h=0,lty=2)
-	abline(v=seed,lty=2,lwd=2,col=2)
-	}
-}
-
+###### CALIBRATION SCORE
 plotFUN_resu_cal<-function(cal_cooke,cal_possi){
 
 	expert<-1:length(cal_cooke)
@@ -51,6 +27,7 @@ plotFUN_resu_cal<-function(cal_cooke,cal_possi){
 	  text(a[2,mini],cc[mini]+.1,"last",cex=1.1)
 }
 
+###### INFORMATIVENESS SCORE
 plotFUN_resu_imp<-function(imp_cooke,imp_possi){
 
 	  expert<-1:length(imp_cooke)

@@ -1,4 +1,11 @@
-###### CAL COOKE
+########################################################
+#### 06/05/20
+#### author: Jeremy Rohmer, BRGM
+#### estimation of calibration and informativeness score
+#### using the classical model by Cooke (1991)
+########################################################
+
+###### CALIBRATION SCORE
 calFUN_classical<-function(param,seed,p=c(0.05,0.45,0.45,0.05)){
 
 	N<-length(seed)
@@ -24,7 +31,7 @@ calFUN_classical<-function(param,seed,p=c(0.05,0.45,0.45,0.05)){
 
 }
 
-###### IMP COOKE
+###### INFORMATIVENESS SCORE
 impFUN_classical<-function(param,u,l,p=c(0.05,0.45,0.45,0.05)){
 
 	I<-0

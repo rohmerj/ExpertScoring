@@ -1,3 +1,11 @@
+########################################################
+#### 06/05/20
+#### author: Jeremy Rohmer, BRGM
+#### estimation of calibration and informativeness score
+#### using the possibilistic approach by Destercke & Chojnacki (2008)
+#### using the classical model by Cooke (1991)
+########################################################
+
 scoring<-function(data_expert,data_seed,q){
 
 	(nexpert<-unique(data_expert[,1]))

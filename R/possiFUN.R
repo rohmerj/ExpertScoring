@@ -1,4 +1,11 @@
-###### CAL POSSI
+########################################################
+#### 06/05/20
+#### author: Jeremy Rohmer, BRGM
+#### estimation of calibration and informativeness score
+#### using the possibilistic approach by Destercke & Chojnacki (2008)
+########################################################
+
+###### CALIBRATION SCORE
 calFUN_possi<-function(param,h){
 	if (h<=param[2] & h>=param[1]){
 		y<-approx(x=param[1:2], y = c(0,1), xout=h)$y
@@ -15,6 +22,7 @@ calFUN_possi<-function(param,h){
 	return(y)
 }
 
+###### INFORMATIVENESS SCORE
 impFUN_possi<-function(param,u,l){
 	support=param[3]-param[1]
 	universe<-u-l
