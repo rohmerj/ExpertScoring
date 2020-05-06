@@ -1,4 +1,11 @@
-# ui object
+########################################################
+#### 06/05/20
+#### author: Jeremy Rohmer, BRGM
+#### ui.R
+#### Web app for estimating calibration and informativeness score
+#### using the possibilistic approach by Destercke & Chojnacki (2008)
+#### using the classical model by Cooke (1991)
+########################################################
 ui <- fluidPage(
   titlePanel(p("Expert scoring app", style = "color:#3474A7")),
   sidebarLayout(
